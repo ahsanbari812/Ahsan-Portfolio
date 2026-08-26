@@ -104,8 +104,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 className="p-2.5 sm:p-3 rounded-xl bg-white/60 border border-dark/[0.06] shadow-2xs"
               >
                 <div className="flex items-center gap-1.5 text-accent text-[11px] font-mono font-semibold mb-1">
-                  <Sparkles className="w-3 h-3" />
-                  <span>Highlight 0{hIdx + 1}</span>
+                  <span>Feature 0{hIdx + 1}</span>
                 </div>
                 <p className="text-xs text-dark-muted leading-snug">
                   {h}
