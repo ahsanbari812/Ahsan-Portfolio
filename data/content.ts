@@ -231,6 +231,24 @@ export const currentRoles: CurrentRoleChip[] = [
 // -----------------------------------------------------------------------------
 export const projects: Project[] = [
   {
+    id: "ustaad-ai",
+    name: "Ustaad AI", // TODO: replace with real content
+    url: "https://github.com/ahsanbari812/Ustaad-AI", // TODO: replace with real content
+    githubUrl: "https://github.com/ahsanbari812/Ustaad-AI", // TODO: replace with real content
+    status: "LIVE",
+    tagline: "Multilingual voice & text service orchestrator for informal economies",
+    description:
+      "A cross-platform mobile application empowering Pakistan's informal skilled workforce. Employs a multi-agent orchestration pipeline to facilitate natural-language service bookings across English, Urdu, and Roman Urdu with geospatial Haversine provider ranking.", // TODO: replace with real content
+    stack: ["React Native", "Expo", "Firebase", "Gemini API", "Haversine Algo", "TypeScript"], // TODO: replace with real content
+    image: "/Screenshots/Ustaad AI.png",
+    previewType: "browser",
+    highlights: [
+      "Gemini API integration with Roman Urdu natural language understanding",
+      "Geospatial radius matching via custom Haversine provider ranking",
+      "Real-time bidirectional service state machine over Firebase",
+    ],
+  },
+  {
     id: "smart-hospital-system",
     name: "Smart Hospital System", // TODO: replace with real content
     url: "https://smart-hospital-system.vercel.app/", // TODO: replace with real content
@@ -249,29 +267,11 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "ustaad-ai",
-    name: "Ustaad AI", // TODO: replace with real content
-    url: "https://github.com/ahsanbari812/Ustaad-AI", // TODO: replace with real content
-    githubUrl: "https://github.com/ahsanbari812/Ustaad-AI", // TODO: replace with real content
-    status: "IN PROGRESS",
-    tagline: "Multilingual voice & text service orchestrator for informal economies",
-    description:
-      "A cross-platform mobile application empowering Pakistan's informal skilled workforce. Employs a multi-agent orchestration pipeline to facilitate natural-language service bookings across English, Urdu, and Roman Urdu with geospatial Haversine provider ranking.", // TODO: replace with real content
-    stack: ["React Native", "Expo", "Firebase", "Gemini API", "Haversine Algo", "TypeScript"], // TODO: replace with real content
-    image: "/Screenshots/Ustaad AI.png",
-    previewType: "browser",
-    highlights: [
-      "Gemini API integration with Roman Urdu natural language understanding",
-      "Geospatial radius matching via custom Haversine provider ranking",
-      "Real-time bidirectional service state machine over Firebase",
-    ],
-  },
-  {
     id: "ai-resume-builder",
     name: "AI Resume Builder", // TODO: replace with real content
     url: "https://ai-resume-builder-fast.vercel.app/", // TODO: replace with real content
     githubUrl: "https://github.com/ahsanbari812/AI-Resume-Builder", // TODO: replace with real content
-    status: "SHIPPED",
+    status: "LIVE",
     tagline: "Intelligent career narrative generator with PDF synthesis",
     description:
       "A full-stack web application leveraging LLM APIs to transform unstructured career highlights into ATS-optimized, professionally formatted resumes. Incorporates resilient retry pipelines, token-efficient prompt templates, and direct vector PDF export.", // TODO: replace with real content
