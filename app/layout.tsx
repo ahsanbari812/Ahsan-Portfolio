@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     title: `${personalInfo.name} — ${personalInfo.title}`,
     description: personalInfo.aboutSummary,
   },
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
