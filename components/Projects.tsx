@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Code, Sparkles, Terminal, Briefcase, Cpu } from "lucide-react";
+import { Code, Sparkles, Terminal, Briefcase, Cpu, Brain } from "lucide-react";
 import { projects, currentRoles, CurrentRoleChip } from "@/data/content";
 import ProjectCard from "./ProjectCard";
 
@@ -20,6 +20,8 @@ export default function Projects() {
         return <Terminal className={`${size} ${iconColor}`} />;
       case "cpu":
         return <Cpu className={`${size} ${iconColor}`} />;
+      case "brain":
+        return <Brain className={`${size} ${iconColor}`} />;
       default:
         return <Briefcase className={`${size} ${iconColor}`} />;
     }

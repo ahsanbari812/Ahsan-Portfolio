@@ -45,23 +45,26 @@ export default function Nav() {
     const elem = document.getElementById(targetId);
     if (elem) {
       const topOffset = scrolled ? 80 : 90;
-      const elementPosition = elem.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - topOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
+      const lenis = (window as any).__lenis;
+      if (lenis) {
+        lenis.scrollTo(elem, { offset: -topOffset, duration: 1.2 });
+      } else {
+        const elementPosition = elem.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - topOffset;
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+      }
       setActiveSection(targetId);
     }
   };
 
   const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const lenis = (window as any).__lenis;
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.2 });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
     setActiveSection("work");
   };
 
@@ -134,6 +137,10 @@ export default function Nav() {
           >
             <a
               href={`mailto:${personalInfo.email}`}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = `mailto:${personalInfo.email}`;
+              }}
               className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-dark text-cream-bg text-xs font-semibold hover:bg-accent transition-colors shadow-xs whitespace-nowrap"
             >
               <span>Get in touch</span>

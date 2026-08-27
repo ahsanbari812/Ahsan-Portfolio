@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { personalInfo } from "@/data/content";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
   title: `${personalInfo.name} — ${personalInfo.title}`,
@@ -37,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -48,7 +49,9 @@ export default function RootLayout({
       </head>
       <body className="bg-cream-bg text-dark font-sans antialiased relative min-h-screen selection:bg-accent/20 selection:text-dark">
         <div className="noise-overlay" aria-hidden="true" />
-        {children}
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );

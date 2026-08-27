@@ -52,7 +52,7 @@ export interface CurrentRoleChip {
   role: string;
   company: string;
   url: string;
-  iconName: "code" | "sparkles" | "terminal" | "briefcase" | "cpu";
+  iconName: "code" | "sparkles" | "terminal" | "briefcase" | "cpu" | "brain";
   logoUrl?: string;   // Path to company logo image (will be provided later)
   logoBg?: string;    // Background style: "dark" | "light" (default: "dark")
 }
@@ -81,14 +81,14 @@ export const personalInfo = {
   github: "https://github.com/ahsanbari812", // TODO: replace with real content
   portfolioUrl: "https://ahsanportfolio-phi.vercel.app", // TODO: replace with real content
   resumeUrl: "/MUHAMMAD_AHSAN_BARI_RESUME.pdf", // TODO: replace with real content
-  
+
   // Hero Headline Configuration
   headline: {
     part1: "I build robust full-stack web applications and integrate practical AI pipelines that solve real problems.", // TODO: replace with real content
     accentPayoff: "I engineer both with precision.", // TODO: replace with real content (Italic serif accent line)
     part2: "Focused on high-performance React & Next.js systems, scalable REST APIs, and intelligent LLM-driven agent workflows.", // TODO: replace with real content
   },
-  
+
   aboutSummary:
     "Software Engineer with hands-on experience building modern web applications and REST APIs using React.js, Next.js, Node.js, and Express.js. Experienced in developing enterprise web solutions and integrating AI-powered features using LLM APIs and Local AI Models.", // TODO: replace with real content
 };
@@ -199,17 +199,17 @@ export const skillsConstellationNodes: SkillNode[] = [
 export const currentRoles: CurrentRoleChip[] = [
   {
     id: "role-1",
-    role: "Co-founder",
-    company: "Velton",
-    url: "#", // TODO: replace with real URL
+    role: "Information Systems Intern",
+    company: "FFC",
+    url: "https://ffc.com.pk/",
     iconName: "code",
-    logoUrl: "", // TODO: provide Velton logo
-    logoBg: "dark",
+    logoUrl: "logos/ffc.svg",
+    logoBg: "light",
   },
   {
     id: "role-2",
-    role: "AI Research Intern",
-    company: "UNB",
+    role: "Frontend Developer Intern",
+    company: "Ssoft Technologies",
     url: "#", // TODO: replace with real URL
     iconName: "briefcase",
     logoUrl: "", // TODO: provide UNB logo
@@ -217,12 +217,12 @@ export const currentRoles: CurrentRoleChip[] = [
   },
   {
     id: "role-3",
-    role: "AI Engineer",
-    company: "CoralOS",
+    role: "AI Solutions",
+    company: "Freelance",
     url: "#", // TODO: replace with real URL
-    iconName: "sparkles",
+    iconName: "brain",
     logoUrl: "", // TODO: provide CoralOS logo
-    logoBg: "dark",
+    logoBg: "light",
   },
 ];
 
@@ -233,7 +233,7 @@ export const projects: Project[] = [
   {
     id: "smart-hospital-system",
     name: "Smart Hospital System", // TODO: replace with real content
-    url: "https://github.com/ahsanbari812/Smart-Hospital-System", // TODO: replace with real content
+    url: "https://smart-hospital-system.vercel.app/", // TODO: replace with real content
     githubUrl: "https://github.com/ahsanbari812/Smart-Hospital-System", // TODO: replace with real content
     status: "LIVE",
     tagline: "End-to-end clinical workflow & patient record system",
@@ -269,7 +269,7 @@ export const projects: Project[] = [
   {
     id: "ai-resume-builder",
     name: "AI Resume Builder", // TODO: replace with real content
-    url: "https://github.com/ahsanbari812/AI-Resume-Builder", // TODO: replace with real content
+    url: "https://ai-resume-builder-fast.vercel.app/", // TODO: replace with real content
     githubUrl: "https://github.com/ahsanbari812/AI-Resume-Builder", // TODO: replace with real content
     status: "SHIPPED",
     tagline: "Intelligent career narrative generator with PDF synthesis",

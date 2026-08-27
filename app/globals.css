@@ -14,10 +14,30 @@
 }
 
 html {
-  scroll-behavior: smooth;
   background-color: #EDE9E2;
   color: #1A1A1A;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Lenis overrides */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling {
+  overflow: clip;
 }
 
 body {

@@ -64,10 +64,9 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               className="group/title inline-flex items-center gap-2 text-2xl sm:text-3xl font-bold tracking-tight text-dark hover:text-accent transition-colors duration-200"
             >
               <span>{project.name}</span>
-              <ArrowUpRight className="w-5 h-5 text-dark-muted group-hover/title:text-accent group-hover/title:translate-x-0.5 group-hover/title:-translate-y-0.5 transition-all duration-200" />
             </a>
 
-            {project.githubUrl && project.githubUrl !== project.url && (
+            {project.githubUrl && (
               <a
                 href={project.githubUrl}
                 target="_blank"
